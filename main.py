@@ -19,9 +19,8 @@ def display_menu():
 # Main loop
 while True:
     display_menu()
-    choice = input("Enter your choice: ")
 
-    if choice == "1":
+    if (choice := input("Enter your choice: ")) == "1":
         name = input("Enter patient name: ")
         age = int(input("Enter patient age: "))
         medical_history = input("Enter medical history: ")
